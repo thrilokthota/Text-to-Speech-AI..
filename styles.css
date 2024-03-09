@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.title-bar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Position relative to contain the animation */
+}
+
+.ai-title {
+    font-size: 0.6em;
+    color: #007bff;
+    margin-left: 10px;
+}
+
+.green-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background-color: green;
+    animation: animateGreen 1s infinite alternate; /* Animation for green color */
+}
+
+@keyframes animateGreen {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 50%;
+    }
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px; /* Add margin to separate from the title bar */
+    display: flex;
+    flex-direction: column; /* Change the direction to display items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+input[type="text"],
+select,
+button {
+    padding: 10px;
+    margin-bottom: 10px; /* Add margin between elements */
+    width: 80%; /* Set the width of the elements */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#mirrorText {
+    color: #006400; /* Deep green color */
+}
+
+footer {
+    text-align: center;
+}
+
+.about-text {
+    margin: 20px auto; /* Adds space around the text and centers it horizontally */
+    max-width: 80%; /* Set maximum width to prevent text from stretching too wide */
+}
+
+.bottom-bar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
